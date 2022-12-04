@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(133, 57, 57);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#heading {
+    margin-bottom: 5vh;
+}
+
+.password_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    min-width: 20%;
+    width: max-content;
+    height: 10%;
+    margin-bottom: 3%;
+}
+
+.modifiers_inner {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 2px;
+    color: black;
+    cursor: pointer;
+}
+
+.modifiers_inner:hover {
+    background-color: rgb(66, 249, 188);
+    box-shadow: rgb(56, 211, 159) 2px 0 30px 10px;
+}
+
+.password_modifier {
+    display: grid;
+    grid-template-areas:
+        "length length"
+        "uppercase uppercase"
+        "lowercase numbers"
+        "special_symbols spaces"
+        "generate_button generate_button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    row-gap: 10px;
+    width: 20vw;
+
+}
+
+.uppercase {
+    grid-area: uppercase;
+    border-radius: 10px;
+    cursor: not-allowed;
+}
+
+.uppercase input {
+
+    cursor: not-allowed;
+}
+
+.lowercase {
+    grid-area: lowercase;
+    border-radius: 20px;
+}
+
+.numbers {
+    grid-area: numbers;
+    border-radius: 20px;
+}
+
+.special_symbols {
+    grid-area: special_symbols;
+    border-radius: 20px;
+}
+
+.spaces {
+    grid-area: spaces;
+    border-radius: 20px;
+}
+
+.generate_button {
+    grid-area: generate_button;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.generate_button button {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    transition: transform .4s ease-in;
+    cursor: pointer;
+}
+
+#button:hover {
+    transform: scale(1.1);
+    background-color: rgb(66, 249, 188);
+    box-shadow: rgb(56, 211, 159) 2px 0 30px 10px;
+}
+
+#button:active {
+    background-color: rgb(79, 159, 132);
+}
+
+.modifiers_text {
+    display: flex;
+    justify-content: center;
+}
+
+#copy_image {
+    position: absolute;
+    top: 31%;
+    left: 61%;
+    cursor: pointer;
+    transition: transform .3s ease-in;
+    transition: background-color .3s ease-in;
+}
+
+#copy_image:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.password_length {
+    grid-area: length;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

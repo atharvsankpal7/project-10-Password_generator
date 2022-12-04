@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random PassWord Generator</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="heading">Generate a PassWord</h1>
+            <div class="password_text">
+                <span id="password_actual">Password</span
+                ><img
+                    src="/copy-two-paper-sheets-interface-symbol.png"
+                    width="20px"
+                    alt=""
+                    id="copy_image"
+                />
+            </div>
+            <div class="password_modifier">
+                <div class="password_length" style="color: black">
+                    Enter the length ==>
+                    <input
+                        type="number"
+                        name=""
+                        id="length"
+                        value="10"
+                        min="10"
+                        max="140"
+                    />
+                </div>
+                <div class="uppercase modifiers_inner">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="uppercase_checkbox"
+                        class="checkboxes"
+                        checked
+                    />
+                    <div class="modifiers_text">uppercase</div>
+                </div>
+                <div class="lowercase modifiers_inner">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="lowercase_checkbox"
+                        class="checkboxes"
+                    />
+                    <div class="modifiers_text">lowercase</div>
+                </div>
+                <div class="numbers modifiers_inner">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="numbers_checkbox"
+                        class="checkboxes"
+                    />
+                    <div class="modifiers_text">numbers</div>
+                </div>
+                <div class="special_symbols modifiers_inner">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="special_symbols_checkbox"
+                        class="checkboxes"
+                    />
+                    <div class="modifiers_text">symbols</div>
+                </div>
+                <div class="spaces modifiers_inner">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="spaces_checkbox"
+                        class="checkboxes"
+                        disabled
+                    />
+                    <div class="modifiers_text">spaces</div>
+                </div>
+                <div class="generate_button">
+                    <button id="button">Generate</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="/script.js"></script>
